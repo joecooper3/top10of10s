@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import styled from 'styled-components';
+
 import data from '../data/data';
 
 class AlbumSingle extends Component {
@@ -7,7 +9,8 @@ class AlbumSingle extends Component {
     year: 2018,
     artist: '',
     album: '',
-    image: ''
+    image: '',
+    genres: ''
   };
 
   componentDidMount() {
@@ -26,12 +29,12 @@ class AlbumSingle extends Component {
     const { match } = this.props;
     const { pos } = match.params;
     const entry = data.filter(item => item.rank == pos && item.year === this.state.year)[0]; // eslint-disable-line
-    const { artist, album, year, image } = entry;
-    this.setState({ pos, artist, album, year, image });
+    const { artist, album, year, image, genres } = entry;
+    this.setState({ pos, artist, album, year, image, genres });
   }
 
   render() {
-    const { pos, artist, album, image } = this.state;
+    const { pos, artist, album, image, genres } = this.state;
     const artUrl = `../images/${image}.jpeg`;
     return (
       <div>
@@ -42,9 +45,17 @@ class AlbumSingle extends Component {
         <div className="image-container">
           <img src={artUrl} alt={`${artist} - ${album}`} />
         </div>
+        <Genres>{genres}</Genres>
       </div>
     );
   }
 }
 
 export default AlbumSingle;
+
+const Genres = styled.h2`
+  color: #0c3cb5;
+  font-size: 30px;
+  margin: 30px 0;
+  font-weight: bold;
+`;
