@@ -4,7 +4,7 @@ import data from '../data/data';
 class AlbumSingle extends Component {
   state = {
     pos: 0,
-    year: 2017,
+    year: 2018,
     artist: '',
     album: ''
   };
@@ -33,10 +33,10 @@ class AlbumSingle extends Component {
     const { pos, artist, album } = this.state;
     return (
       <div>
-        <h1>well {pos}</h1>
-        <h2>
+        <h3>#{pos}</h3>
+        <h1>
           {artist} - {album}
-        </h2>
+        </h1>
       </div>
     );
   }
