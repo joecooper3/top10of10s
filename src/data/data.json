@@ -1,4 +1,94 @@
 [{
+        "year": 2018,
+        "rank": 1,
+        "artist": "Yves Tumor",
+        "album": "Safe in the Hands of Love",
+        "image": "safe-in-the-hands-of-love",
+        "genres": "Neo-Psychedelia, Post-Industrial",
+        "spotify": "spotify:album:1IpYZkYoYCjXTYMDEW8Ksk"
+    },
+    {
+        "year": 2018,
+        "rank": 3,
+        "artist": "Pusha T",
+        "album": "Daytona",
+        "image": "daytona",
+        "genres": "Hardcore Hip Hop, Southern Hip Hop",
+        "spotify": "spotify:album:07bIdDDe3I3hhWpxU6tuBp"
+    },
+    {
+        "year": 2018,
+        "rank": 2,
+        "artist": "Park Jiha",
+        "album": "Communion",
+        "image": "communion",
+        "genres": "Post-Minimalism",
+        "spotify": "spotify:album:5cOsXBUTKytilc5odrPtpk"
+    },
+    {
+        "year": 2018,
+        "rank": 4,
+        "artist": "George Clanton",
+        "album": "Slide",
+        "image": "slide",
+        "genres": "Synthpop, Hypnagogic Pop, Chillwave",
+        "spotify": "spotify:album:5p64XgvFREt1P6mC7Xl6XN"
+    },
+    {
+        "year": 2018,
+        "rank": 5,
+        "artist": "Against All Logic",
+        "album": "2012 - 2017",
+        "image": "2012-2017",
+        "genres": "Deep House",
+        "spotify": "spotify:album:1uzfGk9vxMXfaZ2avqwxod"
+    },
+    {
+        "year": 2018,
+        "rank": 6,
+        "artist": "SOPHIE",
+        "album": "OIL OF EVERY PEARL'S UN-INSIDES",
+        "image": "oil-of-every-pearls-un-insides",
+        "genres": "Bubblegum Bass, Deconstructed Club",
+        "spotify": "spotify:album:0CKiI5WdJ5rzUIK8hyD3SY"
+    },
+    {
+        "year": 2018,
+        "rank": 7,
+        "artist": "Doja Cat",
+        "album": "Amala",
+        "image": "amala",
+        "genres": "Alternative R&B, Pop Rap, Electropop",
+        "spotify": "spotify:album:54tInqO543zy0Y5F2VsUQI"
+    },
+    {
+        "year": 2018,
+        "rank": 8,
+        "artist": "Parquet Courts",
+        "album": "Wide Awaaaaake!",
+        "image": "wide-awake",
+        "genres": "Art Punk, Indie Rock",
+        "spotify": "spotify:album:5uTI2HcpAywDP8Vo1DpJta"
+    },
+    {
+        "year": 2018,
+        "rank": 9,
+        "artist": "Young Jesus",
+        "album": "The Whole Thing is Just There ",
+        "image": "the-whole-thing-is-just-there",
+        "genres": "Indie Rock, Midwest Emo",
+        "spotify": "spotify:album:5YmotJ4qjO6bwStMernlgH"
+    },
+    {
+        "year": 2018,
+        "rank": 10,
+        "artist": "Suss",
+        "album": "Ghost Box",
+        "image": "ghost-box",
+        "genres": "Ambient",
+        "spotify": "spotify:album:6SZ2SeaY7O5oVz9ZNpapXp"
+    },
+    {
         "year": 2017,
         "rank": 1,
         "artist": "Blanck Mass",
