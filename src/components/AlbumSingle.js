@@ -38,7 +38,7 @@ class AlbumSingle extends Component {
     const artUrl = `../images/${image}.jpeg`;
     return (
       <div>
-        <h3>#{pos}</h3>
+        <Position>#{pos}</Position>
         <h1>
           {artist} - {album}
         </h1>
@@ -53,6 +53,14 @@ class AlbumSingle extends Component {
 
 export default AlbumSingle;
 
+const Position = styled.h3`
+  color: #fdfdfd;
+  font-size: 28px;
+  font-family: 'TheinBold';
+  background-color: #0c3cb5;
+  padding: 10px 30px;
+  display: inline-block;
+`;
 const Genres = styled.h2`
   color: #0c3cb5;
   font-size: 30px;

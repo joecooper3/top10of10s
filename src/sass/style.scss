@@ -21,6 +21,10 @@ p {
     margin: 14px 0;
 }
 
+a {
+    text-decoration: none;
+}
+
 .app-grid {
     display: grid;
     grid-template-columns: 65px 125px 75px 600px 1fr;
