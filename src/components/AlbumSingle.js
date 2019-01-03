@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import { connect } from 'react-redux';
 
 import data from '../data/data';
 
@@ -45,13 +46,17 @@ class AlbumSingle extends Component {
         <div className="image-container">
           <img src={artUrl} alt={`${artist} - ${album}`} />
         </div>
-        <Genres>{genres}</Genres>
+        <Genres>
+          {genres} {this.props.pos}
+        </Genres>
       </div>
     );
   }
 }
 
-export default AlbumSingle;
+const mapStateToProps = state => ({ year: state.yearAndPos.year, pos: state.yearAndPos.pos });
+
+export default connect(mapStateToProps)(AlbumSingle);
 
 const Position = styled.h3`
   color: #fdfdfd;

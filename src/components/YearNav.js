@@ -1,20 +1,18 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 class YearNav extends Component {
   render() {
-    return (
-      <ul className="year-nav">
-        <li>2018</li>
-        <li>2017</li>
-        <li>2016</li>
-        <li>2015</li>
-        <li>2014</li>
-        <li>2013</li>
-        <li>2012</li>
-        <li>2011</li>
-        <li>2010</li>
-      </ul>
-    );
+    const yearItems = [];
+    for (let i = 2018; i >= 2010; i--) {
+      const path = `/${i}`;
+      yearItems.push(
+        <Link to={path} key={i}>
+          <li>{i}</li>
+        </Link>
+      );
+    }
+    return <ul className="year-nav">{yearItems}</ul>;
   }
 }
 
