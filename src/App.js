@@ -21,7 +21,7 @@ class App extends Component {
             <PositionNav />
             <main>
               <Route exact path="/" component={Intro} />
-              <Route exact path="/:pos" component={AlbumSingle} />
+              <Route exact path="/:year/:pos" component={AlbumSingle} />
             </main>
           </div>
         </Router>

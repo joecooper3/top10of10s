@@ -6,8 +6,6 @@ import data from '../data/data';
 
 class AlbumSingle extends Component {
   state = {
-    pos: 0,
-    year: 2018,
     artist: '',
     album: '',
     image: '',
@@ -28,14 +26,15 @@ class AlbumSingle extends Component {
 
   _updateData() {
     const { match } = this.props;
-    const { pos } = match.params;
-    const entry = data.filter(item => item.rank == pos && item.year === this.state.year)[0]; // eslint-disable-line
-    const { artist, album, year, image, genres } = entry;
-    this.setState({ pos, artist, album, year, image, genres });
+    const { pos, year } = match.params;
+    const entry = data.filter(item => item.rank == pos && item.year == year)[0]; // eslint-disable-line
+    const { artist, album, image, genres } = entry;
+    this.setState({ pos, artist, album, image, genres });
   }
 
   render() {
-    const { pos, artist, album, image, genres } = this.state;
+    const { pos } = this.props;
+    const { artist, album, image, genres } = this.state;
     const artUrl = `../images/${image}.jpeg`;
     return (
       <div>
@@ -46,9 +45,7 @@ class AlbumSingle extends Component {
         <div className="image-container">
           <img src={artUrl} alt={`${artist} - ${album}`} />
         </div>
-        <Genres>
-          {genres} {this.props.pos}
-        </Genres>
+        <Genres>{genres}</Genres>
       </div>
     );
   }

@@ -10,7 +10,7 @@ export default (state = INITIAL_STATE, action) => {
     case CHANGE_YEAR:
       return { ...state, year: action.payload };
     case CHANGE_POS:
-      return { ...state, year: action.payload };
+      return { ...state, pos: action.payload };
     default:
       return state;
   }
