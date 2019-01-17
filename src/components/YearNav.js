@@ -22,7 +22,7 @@ class YearNav extends Component {
       const path = `/${i}/${pos}`;
       yearItems.push(
         <Link to={path} key={i} onClick={() => this.modifyYear(i)}>
-          <li>{i}</li>
+          {this.props.year == i ? <li className="active">{i}</li> : <li>{i}</li>}
         </Link>
       );
     }

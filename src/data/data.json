@@ -91,20 +91,20 @@
     {
         "year": 2017,
         "rank": 1,
+        "artist": "Alex Cameron",
+        "album": "Forced Witness",
+        "image": "forced-witness",
+        "genres": "Synthpop",
+        "spotify": "spotify:album:6y9QkSGMnFRJRbKzh0j91A"
+    },
+    {
+        "year": 2017,
+        "rank": 2,
         "artist": "Blanck Mass",
         "album": "World Eater",
         "image": "world-eater",
         "genres": "Electro-Industrial, Post-Industrial",
         "spotify": "spotify:album:6WElx5zuqd2CYiyea4oEc8"
-    },
-    {
-        "year": 2017,
-        "rank": 2,
-        "artist": "Bradley Hathaway",
-        "album": "Flesh Eater",
-        "image": "flesh-eater",
-        "genres": "Singer/Songwriter, Spoken Word, Indie Folk",
-        "spotify": "spotify:album:4bQYttIwfqLajJGqyMgmJY"
     },
     {
         "year": 2017,
@@ -127,6 +127,15 @@
     {
         "year": 2017,
         "rank": 5,
+        "artist": "Bradley Hathaway",
+        "album": "Flesh Eater",
+        "image": "flesh-eater",
+        "genres": "Singer/Songwriter, Spoken Word, Indie Folk",
+        "spotify": "spotify:album:4bQYttIwfqLajJGqyMgmJY"
+    },
+    {
+        "year": 2017,
+        "rank": 6,
         "artist": "Young Jesus",
         "album": "s/t",
         "image": "young-jesus",
@@ -135,7 +144,16 @@
     },
     {
         "year": 2017,
-        "rank": 6,
+        "rank": 7,
+        "artist": "Léo Hoffsaes & Loto Retina",
+        "album": "Early Contact",
+        "image": "early-contact",
+        "genres": "Ambient, Spoken Word, Modern Classical",
+        "spotify": "spotify:album:5nuXfwReHpHko0nuA79QDi"
+    },
+    {
+        "year": 2017,
+        "rank": 8,
         "artist": "G Perico",
         "album": "All Blue",
         "image": "all-blue",
@@ -144,30 +162,12 @@
     },
     {
         "year": 2017,
-        "rank": 7,
-        "artist": "Sudan Archives",
-        "album": "Sudan Archives",
-        "image": "sudan-archives",
-        "genres": "Folktronica, Art Pop",
-        "spotify": "spotify:album:6Vs7bJcWtuyriFn0ol16lX"
-    },
-    {
-        "year": 2017,
-        "rank": 8,
+        "rank": 9,
         "artist": "Angles 9",
         "album": "Disappeared Behind the Sun",
         "image": "disappeared-behind-the-sun",
         "genres": "Experimental Big Band",
         "spotify": "spotify:album:0waUO5aFvi6QRglJrEzZht"
-    },
-    {
-        "year": 2017,
-        "rank": 9,
-        "artist": "James Holden & the Animal Spirits",
-        "album": "The Animal Spirits",
-        "image": "the-animal-spirits",
-        "genres": "Progressive Electronic",
-        "spotify": "spotify:album:25DyIBkqzuy4YD5BgJEgm0"
     },
     {
         "year": 2017,

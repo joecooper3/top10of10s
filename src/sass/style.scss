@@ -47,7 +47,8 @@ main {
         transition: 0.25s all;
         cursor: pointer;
 
-        &:hover {
+        &:hover,
+        &.active {
             background: $darkblue;
         }
     }
@@ -66,7 +67,7 @@ main {
         margin-left: -20px;
 
         &:hover,
-        .active {
+        &.active {
             margin-left: 0;
         }
     }
@@ -86,7 +87,8 @@ main {
         margin-top: -20px;
         height: 100%;
 
-        &:hover {
+        &:hover,
+        &.active {
             margin-top: 0;
         }
     }

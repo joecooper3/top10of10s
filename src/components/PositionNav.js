@@ -22,7 +22,7 @@ class PositionNav extends Component {
       const path = `/${year}/${i}`;
       posItems.push(
         <Link to={path} key={i} onClick={() => this.modifyPos(i)}>
-          <li>{i}</li>
+          {this.props.pos == i ? <li className="active">{i}</li> : <li>{i}</li>}
         </Link>
       );
     }
