@@ -12,17 +12,22 @@ class YearNav extends Component {
   }
 
   modifyYear(inp) {
-    this.props.changeYear(inp);
+    this.props.changeYear(inp); // eslint-disable-line
   }
 
   render() {
     const yearItems = [];
-    const { pos } = this.props;
+    const { pos, year, view } = this.props;
     for (let i = 2018; i >= 2010; i--) {
-      const path = `/${i}/${pos}`;
+      let path;
+      if (view === 'single') {
+        path = `/${i}/${pos}`;
+      } else {
+        path = `/${i}/all`;
+      }
       yearItems.push(
         <Link to={path} key={i} onClick={() => this.modifyYear(i)}>
-          {this.props.year == i ? <li className="active">{i}</li> : <li>{i}</li>}
+          {year === i ? <li className="active">{i}</li> : <li>{i}</li>}
         </Link>
       );
     }
@@ -30,7 +35,11 @@ class YearNav extends Component {
   }
 }
 
-const mapStateToProps = state => ({ year: state.yearAndPos.year, pos: state.yearAndPos.pos });
+const mapStateToProps = state => ({
+  year: state.yearAndPos.year,
+  pos: state.yearAndPos.pos,
+  view: state.viewMode.view
+});
 
 export default connect(
   mapStateToProps,

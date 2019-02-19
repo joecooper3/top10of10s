@@ -5,6 +5,9 @@ import { connect } from 'react-redux';
 import { changePos, changeYear } from '../redux/actions';
 import data from '../data/data';
 
+import BigYear from './BigYear';
+import ListenButton from './ListenButton';
+
 class AlbumSingle extends Component {
   constructor(props) {
     super(props);
@@ -12,7 +15,8 @@ class AlbumSingle extends Component {
       artist: '',
       album: '',
       image: '',
-      genres: ''
+      genres: '',
+      spotify: ''
     };
     this._keyboardNav = this._keyboardNav.bind(this);
     this._updateData = this._updateData.bind(this);
@@ -22,10 +26,9 @@ class AlbumSingle extends Component {
     const { match } = this.props;
     const pos = parseInt(match.params.pos);
     const year = parseInt(match.params.year);
-    this.props.changePos(pos);
-    this.props.changeYear(year);
     this._updateData(pos, year);
     document.addEventListener('keydown', this._keyboardNav, false);
+    console.log('component did mount');
   }
 
   componentDidUpdate(prevProps) {
@@ -34,6 +37,10 @@ class AlbumSingle extends Component {
     if (prevProps.match.url !== url) {
       this._updateData(pos, year);
     }
+  }
+
+  componentWillUnmount() {
+    document.removeEventListener('keydown', this._keyboardNav);
   }
 
   _keyboardNav(inp) {
@@ -77,18 +84,26 @@ class AlbumSingle extends Component {
     }
   }
 
-  _updateData(pos, year) {
-    const entry = data.filter(item => item.rank == pos && item.year == year)[0]; // eslint-disable-line
-    const { artist, album, image, genres } = entry;
-    this.setState({ artist, album, image, genres });
+  _updateData(newPos, newYear) {
+    const entry = data.filter(item => item.rank == newPos && item.year == newYear)[0]; // eslint-disable-line
+    const { artist, album, image, genres, spotify } = entry;
+    const { year, pos } = this.props;
+    this.setState({ artist, album, image, genres, spotify });
+    if (newPos !== pos) {
+      this.props.changePos(newPos);
+    }
+    if (newYear !== year) {
+      this.props.changeYear(newYear);
+    }
   }
 
   render() {
-    const { pos } = this.props;
-    const { artist, album, image, genres } = this.state;
+    const { pos, year } = this.props;
+    const { artist, album, image, genres, spotify } = this.state;
     const artUrl = `../images/${image}.jpeg`;
     return (
       <div>
+        <BigYear year={year} />
         <TopContainer>
           <Position>#{pos}</Position>
           <h1>
@@ -99,6 +114,7 @@ class AlbumSingle extends Component {
           <img src={artUrl} alt={`${artist} - ${album}`} />
         </div>
         <Genres>{genres}</Genres>
+        {spotify && <ListenButton uri={`${spotify}`} />}
       </div>
     );
   }

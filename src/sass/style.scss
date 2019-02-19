@@ -70,6 +70,15 @@ main {
         &.active {
             margin-left: 0;
         }
+
+        &.see-all {
+            margin-top: 40px;
+            background: $white;
+            padding: 12px 0 12px 20px;
+            text-transform: lowercase;
+            font-family: 'TheinReg';
+            color: $blue;
+        }
     }
 }
 
@@ -97,5 +106,27 @@ main {
 .image-container {
     img {
         max-width: 600px;
+    }
+}
+
+.big-year {
+    opacity: 1;
+
+    &-enter {
+        opacity: 0.01;
+    }
+
+    &-enter-active {
+        opacity: 1;
+        transition: 0.3s all;
+    }
+
+    &-exit {
+        opacity: 1;
+    }
+
+    &-exit-active {
+        opacity: 0.01;
+        transition: 0.3s all;
     }
 }

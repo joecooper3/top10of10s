@@ -1,4 +1,4 @@
-import { CHANGE_YEAR, CHANGE_POS } from './actionTypes';
+import { CHANGE_YEAR, CHANGE_POS, CHANGE_VIEW } from './actionTypes';
 
 export const changeYear = inp => ({
   type: CHANGE_YEAR,
@@ -7,5 +7,10 @@ export const changeYear = inp => ({
 
 export const changePos = inp => ({
   type: CHANGE_POS,
+  payload: inp
+});
+
+export const changeView = inp => ({
+  type: CHANGE_VIEW,
   payload: inp
 });
