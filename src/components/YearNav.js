@@ -4,6 +4,7 @@ class YearNav extends Component {
   render() {
     return (
       <ul className="year-nav">
+        <li>2019</li>
         <li>2018</li>
         <li>2017</li>
         <li>2016</li>
