@@ -1,28 +1,27 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import './sass/style.scss';
+import { StoreProvider } from './store/AppStore';
 
 import Intro from './components/Intro';
 import PositionNav from './components/PositionNav';
 import YearNav from './components/YearNav';
 import AlbumSingle from './components/AlbumSingle';
 
-class App extends Component {
-  render() {
-    return (
-      <Router>
-        <div className="app-grid">
-          <YearNav />
-          <PositionNav />
-          <main>
-            <Route exact path="/" component={Intro} />
-            <Route exact path="/:year/:routePos" component={AlbumSingle} />
-          </main>
-        </div>
-      </Router>
-    );
-  }
-}
+const App = () => (
+  <Router>
+    <StoreProvider>
+      <div className="app-grid">
+        <YearNav />
+        <PositionNav />
+        <main>
+          <Route exact path="/" component={Intro} />
+          <Route exact path="/:routeYear/:routePos" component={AlbumSingle} />
+        </main>
+      </div>
+    </StoreProvider>
+  </Router>
+);
 
 export default App;

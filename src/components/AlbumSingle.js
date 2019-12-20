@@ -14,16 +14,10 @@ const AlbumSingle = () => {
     genres: ''
   });
   const { pos, artist, album, image, genres } = albumData;
-  const { routePos, year } = useParams();
+  const { routePos, routeYear } = useParams();
 
   useEffect(() => {
-    console.log(routePos);
-    console.log(year);
-    console.log(data[0].rank);
-    console.log(data[0].rank == routePos);
-    console.log(data[0].year == year);
-    const entry = data.filter(item => item.rank == routePos && item.year == year)[0]; // eslint-disable-line
-    console.log(entry);
+    const entry = data.filter(item => item.rank == routePos && item.year == routeYear)[0]; // eslint-disable-line
     setAlbumData({
       pos: routePos,
       artist: entry.artist,
@@ -32,7 +26,7 @@ const AlbumSingle = () => {
       image: entry.image,
       genres: entry.genres
     });
-  }, [routePos, year]);
+  }, [routePos, routeYear]);
 
   const artUrl = `../images/${image}.jpeg`;
   return (

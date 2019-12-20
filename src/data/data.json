@@ -1,5 +1,95 @@
 [
   {
+    "year": 2019,
+    "rank": 1,
+    "artist": "Tree",
+    "album": "We Grown Now",
+    "image": "we-grown-now",
+    "genres": "Hip Hop",
+    "spotify": "spotify:album:1Uej2ZouJetMBXxuhbUSu3"
+  },
+  {
+    "year": 2019,
+    "rank": 2,
+    "artist": "Tyler, the Creator",
+    "album": "Igor",
+    "image": "igor",
+    "genres": "Neo-Soul, Experimental Hip Hop",
+    "spotify": "spotify:album:5zi7WsKlIiUXv09tbGLKsE"
+  },
+  {
+    "year": 2019,
+    "rank": 3,
+    "artist": "FKA twigs",
+    "album": "Magdalene",
+    "image": "magdalene",
+    "genres": "Art Pop, Glitch Pop",
+    "spotify": "spotify:album:2w8Wshbp9RCPJdPU1iOpaY"
+  },
+  {
+    "year": 2019,
+    "rank": 4,
+    "artist": "JPEGMAFIA",
+    "album": "All My Heroes are Cornballs",
+    "image": "all-my-heroes-are-cornballs",
+    "genres": "Experimental Hip Hop, Glitch Hop",
+    "spotify": "spotify:album:5ilsl5R2lGACTnPZMKIp7o"
+  },
+  {
+    "year": 2019,
+    "rank": 5,
+    "artist": "Solange",
+    "album": "When I Get Home",
+    "image": "when-i-get-home",
+    "genres": "Alternative R&B, Neo-Soul, Art Pop",
+    "spotify": "spotify:album:4WF4HvVT7VjGnVjxjoCR6w"
+  },
+  {
+    "year": 2019,
+    "rank": 6,
+    "artist": "Chris Crack",
+    "album": "Never Hated I Just Waited",
+    "image": "never-hated-i-just-waited",
+    "genres": "Abstract Hip Hop",
+    "spotify": "spotify:album:39TV2UxsDJdq1CzSQL6pP9"
+  },
+  {
+    "year": 2019,
+    "rank": 7,
+    "artist": "Alex Cameron",
+    "album": "Miami Memory",
+    "image": "miami-memory",
+    "genres": "Pop Rock",
+    "spotify": "spotify:album:33u2PRETjYklC6UqxJBGW2"
+  },
+  {
+    "year": 2019,
+    "rank": 8,
+    "artist": "Charli XCX",
+    "album": "Charli",
+    "image": "charli",
+    "genres": "Electropop, Bubblegum Bass",
+    "spotify": "spotify:album:386IqvSuljaZsMjwDGGdLj"
+  },
+  {
+    "year": 2019,
+    "rank": 9,
+    "artist": "Big Thief",
+    "album": "U.F.O.F.",
+    "image": "ufof",
+    "genres": "Indie Folk",
+    "spotify": "spotify:album:5X0bIKvPtSDo4NpXqgrB6p"
+  },
+  {
+    "year": 2019,
+    "rank": 10,
+    "artist": "Weatherday",
+    "album": "Come In",
+    "image": "come-in",
+    "genres": "Lo-Fi Indie, Noise Pop, Emo",
+    "spotify": "spotify:album:7i8NW72gbhfvCPIKx4RWLN"
+  },
+  {
     "year": 2018,
     "rank": 1,
     "artist": "Yves Tumor",
