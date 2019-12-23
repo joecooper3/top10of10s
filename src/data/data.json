@@ -182,20 +182,20 @@
   {
     "year": 2017,
     "rank": 1,
+    "artist": "Alex Cameron",
+    "album": "Forced Witness",
+    "image": "forced-witness",
+    "genres": "Synthpop",
+    "spotify": "spotify:album:6y9QkSGMnFRJRbKzh0j91A"
+  },
+  {
+    "year": 2017,
+    "rank": 2,
     "artist": "Blanck Mass",
     "album": "World Eater",
     "image": "world-eater",
     "genres": "Electro-Industrial, Post-Industrial",
     "spotify": "spotify:album:6WElx5zuqd2CYiyea4oEc8"
-  },
-  {
-    "year": 2017,
-    "rank": 2,
-    "artist": "Bradley Hathaway",
-    "album": "Flesh Eater",
-    "image": "flesh-eater",
-    "genres": "Singer/Songwriter, Spoken Word, Indie Folk",
-    "spotify": "spotify:album:4bQYttIwfqLajJGqyMgmJY"
   },
   {
     "year": 2017,
@@ -209,15 +209,6 @@
   {
     "year": 2017,
     "rank": 4,
-    "artist": "Mount Eerie",
-    "album": "A Crow Looked at Me",
-    "image": "a-crow-looked-at-me",
-    "genres": "Singer/Songwriter, Indie Folk, Contemporary Folk",
-    "spotify": "spotify:album:5p64XgvFREt1P6mC7Xl6XN"
-  },
-  {
-    "year": 2017,
-    "rank": 5,
     "artist": "Young Jesus",
     "album": "s/t",
     "image": "young-jesus",
@@ -226,7 +217,34 @@
   },
   {
     "year": 2017,
+    "rank": 5,
+    "artist": "Bradley Hathaway",
+    "album": "Flesh Eater",
+    "image": "flesh-eater",
+    "genres": "Singer/Songwriter, Spoken Word, Indie Folk",
+    "spotify": "spotify:album:4bQYttIwfqLajJGqyMgmJY"
+  },
+  {
+    "year": 2017,
     "rank": 6,
+    "artist": "Mount Eerie",
+    "album": "A Crow Looked at Me",
+    "image": "a-crow-looked-at-me",
+    "genres": "Singer/Songwriter, Indie Folk, Contemporary Folk",
+    "spotify": "spotify:album:5p64XgvFREt1P6mC7Xl6XN"
+  },
+  {
+    "year": 2017,
+    "rank": 7,
+    "artist": "Léo Hoffsaes & Loto Retina",
+    "album": "Early Contact",
+    "image": "early-contact",
+    "genres": "Ambient, Spoken Word, Modern Classical",
+    "bandcamp": "https://permalnk.bandcamp.com/album/early-contact"
+  },
+  {
+    "year": 2017,
+    "rank": 8,
     "artist": "G Perico",
     "album": "All Blue",
     "image": "all-blue",
@@ -235,30 +253,12 @@
   },
   {
     "year": 2017,
-    "rank": 7,
+    "rank": 9,
     "artist": "Sudan Archives",
     "album": "Sudan Archives",
     "image": "sudan-archives",
     "genres": "Folktronica, Art Pop",
     "spotify": "spotify:album:6Vs7bJcWtuyriFn0ol16lX"
-  },
-  {
-    "year": 2017,
-    "rank": 8,
-    "artist": "Angles 9",
-    "album": "Disappeared Behind the Sun",
-    "image": "disappeared-behind-the-sun",
-    "genres": "Experimental Big Band",
-    "spotify": "spotify:album:0waUO5aFvi6QRglJrEzZht"
-  },
-  {
-    "year": 2017,
-    "rank": 9,
-    "artist": "James Holden & the Animal Spirits",
-    "album": "The Animal Spirits",
-    "image": "the-animal-spirits",
-    "genres": "Progressive Electronic",
-    "spotify": "spotify:album:25DyIBkqzuy4YD5BgJEgm0"
   },
   {
     "year": 2017,
@@ -299,6 +299,15 @@
   {
     "year": 2016,
     "rank": 4,
+    "artist": "Jeff Rosenstock",
+    "album": "Worry",
+    "image": "worry",
+    "genres": "Pop Punk, Power Pop, Punk Rock",
+    "spotify": "spotify:album:25DyIBkqzuy4YD5BgJEgm0"
+  },
+  {
+    "year": 2016,
+    "rank": 5,
     "artist": "Denzel Curry",
     "album": "Imperial",
     "image": "imperial",
@@ -307,7 +316,7 @@
   },
   {
     "year": 2016,
-    "rank": 5,
+    "rank": 6,
     "artist": "Mitski",
     "album": "Puberty 2",
     "image": "puberty-2",
@@ -316,21 +325,12 @@
   },
   {
     "year": 2016,
-    "rank": 6,
+    "rank": 7,
     "artist": "Young Thug",
     "album": "JEFFERY",
     "image": "jeffery",
     "genres": "Trap Rap, Southern Hip Hop",
     "spotify": "spotify:album:7EpUpNUkkEGnaCvkcn1j4H"
-  },
-  {
-    "year": 2016,
-    "rank": 7,
-    "artist": "Jeff Rosenstock",
-    "album": "Worry",
-    "image": "worry",
-    "genres": "Pop Punk, Power Pop, Punk Rock",
-    "spotify": "spotify:album:25DyIBkqzuy4YD5BgJEgm0"
   },
   {
     "year": 2016,
@@ -434,20 +434,20 @@
   {
     "year": 2015,
     "rank": 9,
+    "artist": "Sufjan Stevens",
+    "album": "Carrie & Lowell",
+    "image": "carrie-and-lowell",
+    "genres": "Indie Folk, Singer/Songwriter",
+    "spotify": "spotify:album:0U8DeqqKDgIhIiWOdqiQXE"
+  },
+  {
+    "year": 2015,
+    "rank": 10,
     "artist": "Domenique Dumont",
     "album": "Comme ça",
     "image": "comme-ca",
     "genres": "Balearic Beat, Synthpop",
     "spotify": "spotify:album:55YrEqkp3Qrnue9WXHXo8t"
-  },
-  {
-    "year": 2015,
-    "rank": 10,
-    "artist": "Levon Vincent",
-    "album": "s/t",
-    "image": "levon-vincent",
-    "genres": "Deep House, Techno",
-    "youtube": "https://www.youtube.com/watch?v=2scYIgM0_HM"
   },
   {
     "year": 2014,
@@ -479,6 +479,15 @@
   {
     "year": 2014,
     "rank": 4,
+    "artist": "RATKING",
+    "album": "So It Goes",
+    "image": "so-it-goes",
+    "genres": "East Coast Hip Hop, Abstract Hip Hop, Experimental Hip Hop",
+    "spotify": "spotify:album:3hXl1HiPIzbR1alZy3Eaf3"
+  },
+  {
+    "year": 2014,
+    "rank": 5,
     "artist": "Kevin Gates",
     "album": "By Any Means",
     "image": "by-any-means",
@@ -487,7 +496,7 @@
   },
   {
     "year": 2014,
-    "rank": 5,
+    "rank": 6,
     "artist": "Various Artists",
     "album": "We Invented the Bop",
     "image": "we-invented-the-bop",
@@ -496,7 +505,7 @@
   },
   {
     "year": 2014,
-    "rank": 6,
+    "rank": 7,
     "artist": "G Herbo",
     "album": "Welcome to Fazoland",
     "image": "welcome-to-fazoland",
@@ -505,21 +514,12 @@
   },
   {
     "year": 2014,
-    "rank": 7,
+    "rank": 8,
     "artist": "clipping.",
     "album": "CLPPNG",
     "image": "clppng",
     "genres": "Industrial Hip Hop, Experimental Hip Hop",
     "spotify": "spotify:album:0nzammMx8yd48selZLWfUx"
-  },
-  {
-    "year": 2014,
-    "rank": 8,
-    "artist": "RATKING",
-    "album": "So It Goes",
-    "image": "so-it-goes",
-    "genres": "East Coast Hip Hop, Abstract Hip Hop, Experimental Hip Hop",
-    "spotify": "spotify:album:3hXl1HiPIzbR1alZy3Eaf3"
   },
   {
     "year": 2014,
@@ -668,6 +668,15 @@
   {
     "year": 2012,
     "rank": 5,
+    "artist": "Farrah Abraham",
+    "album": "My Teenage Dream Ended",
+    "image": "my-teenage-dream-ended",
+    "genres": "Electropop, Dance-Pop",
+    "spotify": "spotify:album:2rdEDYy8l2S1BPcEIU5JRM"
+  },
+  {
+    "year": 2012,
+    "rank": 6,
     "artist": "Cloud Nothings",
     "album": "Attack on Memory",
     "image": "attack-on-memory",
@@ -676,7 +685,7 @@
   },
   {
     "year": 2012,
-    "rank": 6,
+    "rank": 7,
     "artist": "Future of the Left",
     "album": "The Plot Against Common Sense",
     "image": "the-plot-against-common-sense",
@@ -685,7 +694,7 @@
   },
   {
     "year": 2012,
-    "rank": 7,
+    "rank": 8,
     "artist": "Grimes",
     "album": "Visions",
     "image": "visions",
@@ -694,7 +703,7 @@
   },
   {
     "year": 2012,
-    "rank": 8,
+    "rank": 9,
     "artist": "Good Night & Good Morning",
     "album": "Narrowing Type",
     "image": "narrowing-type",
@@ -703,21 +712,12 @@
   },
   {
     "year": 2012,
-    "rank": 9,
+    "rank": 10,
     "artist": "The Men",
     "album": "Open Your Heart",
     "image": "open-your-heart",
     "genres": "Noise Rock, Indie Rock",
     "spotify": "spotify:album:0nVaPLv4z2SG4k7ebKLRJ0"
-  },
-  {
-    "year": 2012,
-    "rank": 10,
-    "artist": "Fiona Apple",
-    "album": "The Idler Wheel Is Wiser Than the Driver of the Screw and Whipping Cords Will Serve You More Than Ropes Will Ever Do",
-    "image": "the-idler-wheel",
-    "genres": "Art Pop, Singer/Songwriter",
-    "spotify": "spotify:album:7uccppFArLf9dNOwDftOZa"
   },
   {
     "year": 2011,

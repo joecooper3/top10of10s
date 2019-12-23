@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import styled from 'styled-components';
 
+import { useStore } from '../store/AppStore';
 import data from '../data/data';
 
 const AlbumSingle = () => {
@@ -15,6 +16,14 @@ const AlbumSingle = () => {
   });
   const { pos, artist, album, image, genres } = albumData;
   const { routePos, routeYear } = useParams();
+  const { state, dispatch } = useStore();
+
+  useEffect(() => {
+    if (state.currentPos === 0 || state.currentYear === 0) {
+      dispatch({ type: 'changeYear', payload: routeYear });
+      dispatch({ type: 'changePos', payload: routePos });
+    }
+  }, []);
 
   useEffect(() => {
     const entry = data.filter(item => item.rank == routePos && item.year == routeYear)[0]; // eslint-disable-line

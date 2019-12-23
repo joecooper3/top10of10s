@@ -1,7 +1,7 @@
 import React, { createContext, useContext, useReducer } from 'react';
 
 const StoreContext = createContext();
-const initialState = { currentYear: 2019, currentPos: 1 };
+const initialState = { currentYear: 0, currentPos: 0 };
 
 const reducer = (state, action) => {
   switch (action.type) {

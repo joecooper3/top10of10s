@@ -1,27 +1,34 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 
 import { useStore } from '../store/AppStore';
 
-const PositionNav = () => {
+const PositionNav = props => {
   const posItems = [];
-  // const currentYear = 2019;
   const { state, dispatch } = useStore();
 
+  const redirect = pos => {
+    const year = state.currentYear !== 0 ? state.currentYear : 2019;
+    const path = `/${year}/${pos}`;
+    dispatch({ type: 'changePos', payload: pos });
+    props.history.push(path);
+  };
+
   for (let i = 1; i <= 10; i++) {
-    const path = `/${state.currentYear}/${i}`;
     posItems.push(
-      <Link to={path} key={i}>
+      <a
+        key={i}
+        onClick={() => redirect(i)}
+        onKeyPress={() => redirect(i)}
+        role="button"
+        tabIndex={0}
+        className={state.currentPos === i ? 'active' : ''}
+      >
         <li>{i}</li>
-      </Link>
+      </a>
     );
   }
-  return (
-    <ul className="position-nav">
-      {posItems}
-      <button onClick={() => dispatch({ type: 'changeYear', payload: 2014 })}>yyyyyy</button>
-    </ul>
-  );
+  return <ul className="position-nav">{posItems}</ul>;
 };
 
-export default PositionNav;
+export default withRouter(PositionNav);
