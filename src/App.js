@@ -7,7 +7,6 @@ import { StoreProvider } from './store/AppStore';
 import Intro from './components/Intro';
 import PositionNav from './components/PositionNav';
 import YearNav from './components/YearNav';
-import AlbumAll from './components/AlbumAll';
 import AlbumSingle from './components/AlbumSingle';
 
 const App = () => (
