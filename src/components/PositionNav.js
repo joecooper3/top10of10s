@@ -1,69 +1,34 @@
-import React, { Component } from 'react';
-import { bindActionCreators } from 'redux';
-import { Link } from 'react-router-dom';
-import { connect } from 'react-redux';
+import React from 'react';
+import { withRouter } from 'react-router-dom';
 
-import { changePos, changeView } from '../redux/actions';
+import { useStore } from '../store/AppStore';
 
-class PositionNav extends Component {
-  constructor(props) {
-    super(props);
+const PositionNav = props => {
+  const posItems = [];
+  const { state, dispatch } = useStore();
 
-    this.numberClick = this.numberClick.bind(this);
-  }
+  const redirect = pos => {
+    const year = state.currentYear !== 0 ? state.currentYear : 2019;
+    const path = `/${year}/${pos}`;
+    dispatch({ type: 'changePos', payload: pos });
+    props.history.push(path);
+  };
 
-  numberClick(inp) {
-    const { view } = this.props;
-    this.props.changePos(inp);
-    if (view !== 'single') {
-      this.props.changeView('single');
-    }
-  }
-
-  render() {
-    const posItems = [];
-    const { pos, year, view } = this.props;
-    for (let i = 1; i <= 10; i++) {
-      const path = `/${year}/${i}`;
-      posItems.push(
-        <Link to={path} key={i} onClick={() => this.numberClick(i)}>
-          {pos === i && view === 'single' ? <li className="active">{i}</li> : <li>{i}</li>}
-        </Link>
-      );
-    }
-    return (
-      <ul className="position-nav">
-        {posItems}
-        {view === 'all' ? (
-          <Link to={`/${year}/1`} onClick={() => this.numberClick(1)}>
-            <li className="see-all active">See all</li>
-          </Link>
-        ) : (
-          <Link to={`/${year}/all`}>
-            <li className="see-all">See all</li>
-          </Link>
-        )}
-      </ul>
+  for (let i = 1; i <= 10; i++) {
+    posItems.push(
+      <a
+        key={i}
+        onClick={() => redirect(i)}
+        onKeyPress={() => redirect(i)}
+        role="button"
+        tabIndex={0}
+        className={state.currentPos === i ? 'active' : ''}
+      >
+        <li>{i}</li>
+      </a>
     );
   }
-}
+  return <ul className="position-nav">{posItems}</ul>;
+};
 
-const mapStateToProps = state => ({
-  year: state.yearAndPos.year,
-  pos: state.yearAndPos.pos,
-  view: state.viewMode.view
-});
-
-const mapDispatchToProps = dispatch =>
-  bindActionCreators(
-    {
-      changePos,
-      changeView
-    },
-    dispatch
-  );
-
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(PositionNav);
+export default withRouter(PositionNav);

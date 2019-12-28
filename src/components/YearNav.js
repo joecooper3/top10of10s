@@ -1,47 +1,34 @@
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import { connect } from 'react-redux';
+import React from 'react';
+import { withRouter } from 'react-router-dom';
 
-import { changeYear } from '../redux/actions';
+import { useStore } from '../store/AppStore';
 
-class YearNav extends Component {
-  constructor(props) {
-    super(props);
+const YearNav = props => {
+  const yearItems = [];
+  const { state, dispatch } = useStore();
 
-    this.modifyYear = this.modifyYear.bind(this);
+  const redirect = year => {
+    const path = `/${year}/1`;
+    dispatch({ type: 'changeYear', payload: year });
+    props.history.push(path);
+  };
+
+  for (let i = 2019; i >= 2010; i--) {
+    yearItems.push(
+      <a
+        key={i}
+        onClick={() => redirect(i)}
+        onKeyPress={() => redirect(i)}
+        role="button"
+        tabIndex={0}
+        className={state.currentYear === i ? 'active' : ''}
+      >
+        <li>{i}</li>
+      </a>
+    );
   }
 
-  modifyYear(inp) {
-    this.props.changeYear(inp); // eslint-disable-line
-  }
+  return <ul className="year-nav">{yearItems}</ul>;
+};
 
-  render() {
-    const yearItems = [];
-    const { pos, year, view } = this.props;
-    for (let i = 2018; i >= 2010; i--) {
-      let path;
-      if (view === 'single') {
-        path = `/${i}/${pos}`;
-      } else {
-        path = `/${i}/all`;
-      }
-      yearItems.push(
-        <Link to={path} key={i} onClick={() => this.modifyYear(i)}>
-          {year === i ? <li className="active">{i}</li> : <li>{i}</li>}
-        </Link>
-      );
-    }
-    return <ul className="year-nav">{yearItems}</ul>;
-  }
-}
-
-const mapStateToProps = state => ({
-  year: state.yearAndPos.year,
-  pos: state.yearAndPos.pos,
-  view: state.viewMode.view
-});
-
-export default connect(
-  mapStateToProps,
-  { changeYear }
-)(YearNav);
+export default withRouter(YearNav);
